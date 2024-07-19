@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* \s{2,} */
+/* ^\s*$\n */
+:root {
+    --color-uno: white;
+    --color-dos: black;
+    --color-tres: #F3F5FC;
+    --color-cuatro: #609ED4;
+    --color-cinco: yellowgreen;
+    --color-seis: crimson;
+    --color-siete: #ADB5BD;
+    --fuente-uno: "Open Sans", sans-serif;
+    --fuente-dos: "Lato", sans-serif;
+    --fuente-tres: "Comic Neue", cursive;
+    --fuente-cuatro: "Oswald", sans-serif;
+    --fuente-cinco: "Bebas Neue", sans-serif;
+    --fuente-seis: "Delius", cursive;
+    --fuente-siete: "Noto Sans Display", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-tres);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.encabezado {
+    background-color: var(--color-uno);
+    border: 0.2rem solid var(--color-siete);
+    border-bottom-right-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.encabezado-titulo {
+    font-family: var(--fuente-siete);
+    font-size: 2rem;
+    font-weight: 900;
+    /* -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black; */
+}
+
+.intermedio {
+    align-items: start;
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+    height: auto;
+    justify-content: center;
+    padding: 1rem;
+    width: auto;
+}
+
+.intermedio-bloque-encriptador {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 70%;
+}
+
+.intermedio-bloque-encriptador-entrada {
+    border: 0.2rem solid var(--color-siete);
+    border-radius: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 90%;
+    padding: 1rem;
+    resize: none;
+    width: 95%;
+}
+
+.intermedio-bloque-encriptador-aviso {
+    font-family: var(--fuente-tres);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.intermedio-bloque-encriptador-botones {
+    display: flex;
+    flex-grow: 1;
+    gap: 3rem;
+    height: auto;
+    justify-content: space-between;
+}
+
+.intermedio-bloque-encriptador-boton-encriptar {
+    background-color: var(--color-cuatro);
+    border: 0.2rem solid var(--color-dos);
+    border-radius: 2rem;
+    color: var(--color-uno);
+    font-family: var(--fuente-cinco);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    width: 8rem;
+}
+
+.intermedio-bloque-encriptador-boton-encriptar:hover {
+    background-color: var(--color-cinco);
+}
+
+.intermedio-bloque-encriptador-boton-desencriptar {
+    background-color: var(--color-tres);
+    border: 0.2rem solid var(--color-dos);
+    border-radius: 2rem;
+    font-family: var(--fuente-cinco);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    width: 10rem;
+}
+
+.intermedio-bloque-encriptador-boton-desencriptar:hover {
+    background-color: var(--color-seis);
+    color: var(--color-uno);
+}
+
+.intermedio-bloque-encriptado {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 30%;
+}
+
+.intermedio-bloque-encriptado-texto {
+    background-color: var(--color-uno);
+    border: 0.2rem solid var(--color-siete);
+    border-radius: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 90%;
+    padding: 1rem;
+    width: 85%;
+}
+
+.intermedio-bloque-encriptado-boton {
+    display: flex;
+    flex-grow: 1;
+    height: auto;
+}
+
+.intermedio-bloque-encriptado-boton-copiar {
+    background-color: var(--color-cuatro);
+    border: 0.2rem solid var(--color-dos);
+    border-radius: 2rem;
+    color: var(--color-uno);
+    font-family: var(--fuente-cinco);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    width: 6.5rem;
+}
+
+.intermedio-bloque-encriptado-boton-copiar:hover {
+    background-color: var(--color-cinco);
+}
+
+.pie-de-pagina {
+    background-color: var(--color-dos);
+    border: 0.2rem solid var(--color-siete);
+    border-top-left-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.pie-de-pagina-contacto {
+    color: var(--color-uno);
+    font-family: var(--fuente-seis);
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+@media (max-width: 1080px) {
+    .encabezado {
+        border: 0.5rem solid var(--color-dos);
+        border-bottom-right-radius: 5rem;
+        padding: 2rem;
+    }
+
+    .encabezado-titulo {
+        font-size: 5rem;
+    }
+
+    .intermedio {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .intermedio-bloque-encriptador {
+        gap: 1rem;
+        height: 60%;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .intermedio-bloque-encriptador-entrada {
+        border: 0.5rem solid var(--color-siete);
+        border-radius: 3rem;
+        font-size: 3rem;
+        height: 80%;
+        resize: none;
+        width: 90%;
+    }
+
+    .intermedio-bloque-encriptador-aviso {
+        font-family: var(--fuente-tres);
+        font-size: 2.8rem;
+    }
+
+    .intermedio-bloque-encriptador-botones {
+        display: flex;
+        flex-grow: 1;
+        gap: 5rem;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .intermedio-bloque-encriptador-boton-encriptar {
+        border: 0.4rem solid var(--color-dos);
+        border-radius: 3rem;
+        font-size: 3rem;
+        width: 15rem;
+    }
+
+    .intermedio-bloque-encriptador-boton-desencriptar {
+        border: 0.4rem solid var(--color-dos);
+        border-radius: 3rem;
+        font-size: 3rem;
+        width: 18rem;
+    }
+
+    .intermedio-bloque-encriptado {
+        gap: 2rem;
+        height: 40%;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .intermedio-bloque-encriptado-texto {
+        border: 0.5rem solid var(--color-siete);
+        border-radius: 3rem;
+        font-size: 3rem;
+        height: 80%;
+        width: 90%;
+    }
+
+    .intermedio-bloque-encriptado-boton-copiar {
+        border: 0.4rem solid var(--color-dos);
+        border-radius: 3rem;
+        font-size: 3rem;
+        width: 10rem;
+    }
+
+    .pie-de-pagina {
+        border: 0.5rem solid var(--color-siete);
+        border-top-left-radius: 5rem;
+        padding: 1rem;
+    }
+
+    .pie-de-pagina-contacto {
+        font-family: var(--fuente-seis);
+        font-size: 1.8rem;
+    }
+}

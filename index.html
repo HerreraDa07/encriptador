@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto Encriptador de Texto.">
+    <meta name="keywords" content="encriptador, texto, herramienta, des-encriptador">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado-titulo">Encriptador de Texto</h1>
+    </header>
+    <main class="intermedio">
+        <section class="intermedio-bloque-encriptador">
+            <textarea class="intermedio-bloque-encriptador-entrada" id="entradaUsuario" rows="5" cols="50"
+                placeholder="Escribe aqui tu texto"></textarea>
+            <p class="intermedio-bloque-encriptador-aviso"><strong>Solo puede ingresar letras minusculas / No puede
+                    ingresar caracteres especiales</strong></p>
+            <div class="intermedio-bloque-encriptador-botones">
+                <button onclick="borrarDatosCaja()" class="intermedio-bloque-encriptador-boton-encriptar"
+                    type="button"><strong>Encriptar</strong></button>
+                <button class="intermedio-bloque-encriptador-boton-desencriptar"
+                    type="button"><strong>Desencriptar</strong></button>
+            </div>
+        </section>
+        <section class="intermedio-bloque-encriptado">
+            <p class="intermedio-bloque-encriptado-texto" id="textoEncriptado">Hola</p>
+            <div class="intermedio-bloque-encriptado-boton">
+                <button class="intermedio-bloque-encriptado-boton-copiar" onclick="copiarTexto()"
+                    type="button"><strong>Copiar</strong></button>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-de-pagina">
+        <address class="pie-de-pagina-contacto">
+            <strong>
+                Desarrollado por: David Stivens Herrera Capera<br>
+                davidherrera20020707@gmail.com<br>
+                (+57) 322 748 42 49<br>
+            </strong>
+        </address>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
