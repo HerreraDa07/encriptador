@@ -37,7 +37,7 @@ body {
 
 .encabezado {
     background-color: var(--color-uno);
-    border: 0.2rem solid var(--color-siete);
+    border-bottom: 0.5rem solid var(--color-cinco);
     border-bottom-right-radius: 2rem;
     padding: 0.5rem;
 }
@@ -104,7 +104,8 @@ body {
     font-family: var(--fuente-cinco);
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    width: 8rem;
+    padding: 0.3rem 0.5rem;
+    width: auto;
 }
 
 .intermedio-bloque-encriptador-boton-encriptar:hover {
@@ -118,7 +119,8 @@ body {
     font-family: var(--fuente-cinco);
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    width: 10rem;
+    padding: 0.3rem 0.5rem;
+    width: auto;
 }
 
 .intermedio-bloque-encriptador-boton-desencriptar:hover {
@@ -161,7 +163,8 @@ body {
     font-family: var(--fuente-cinco);
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
-    width: 6.5rem;
+    padding: 0.3rem 0.5rem;
+    width: auto;
 }
 
 .intermedio-bloque-encriptado-boton-copiar:hover {
@@ -170,7 +173,7 @@ body {
 
 .pie-de-pagina {
     background-color: var(--color-dos);
-    border: 0.2rem solid var(--color-siete);
+    border-top: 0.5rem solid var(--color-cuatro);
     border-top-left-radius: 2rem;
     padding: 0.5rem;
 }
@@ -182,15 +185,16 @@ body {
     text-align: right;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 64rem)
+/* Tablet */
+    {
     .encabezado {
-        border: 0.5rem solid var(--color-dos);
         border-bottom-right-radius: 5rem;
-        padding: 2rem;
+        padding: 0.5rem;
     }
 
     .encabezado-titulo {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
 
     .intermedio {
@@ -208,71 +212,131 @@ body {
     }
 
     .intermedio-bloque-encriptador-entrada {
-        border: 0.5rem solid var(--color-siete);
-        border-radius: 3rem;
-        font-size: 3rem;
-        height: 80%;
-        resize: none;
+        border: 0.3rem solid var(--color-siete);
+        border-radius: 2rem;
+        font-size: 2rem;
+        height: 90%;
         width: 90%;
     }
 
     .intermedio-bloque-encriptador-aviso {
-        font-family: var(--fuente-tres);
-        font-size: 2.8rem;
+        font-size: 1.8rem;
     }
 
     .intermedio-bloque-encriptador-botones {
         display: flex;
-        flex-grow: 1;
-        gap: 5rem;
-        height: auto;
-        justify-content: space-between;
+        gap: 4rem;
     }
 
     .intermedio-bloque-encriptador-boton-encriptar {
-        border: 0.4rem solid var(--color-dos);
-        border-radius: 3rem;
-        font-size: 3rem;
-        width: 15rem;
+        font-size: 2.3rem;
+        padding: 0.3rem 0.8rem;
     }
 
     .intermedio-bloque-encriptador-boton-desencriptar {
-        border: 0.4rem solid var(--color-dos);
-        border-radius: 3rem;
-        font-size: 3rem;
-        width: 18rem;
+        font-size: 2.3rem;
+        padding: 0.3rem 0.8rem;
     }
 
     .intermedio-bloque-encriptado {
-        gap: 2rem;
+        gap: 1rem;
         height: 40%;
-        padding: 1rem;
         width: 100%;
     }
 
     .intermedio-bloque-encriptado-texto {
-        border: 0.5rem solid var(--color-siete);
-        border-radius: 3rem;
-        font-size: 3rem;
-        height: 80%;
-        width: 90%;
+        border: 0.3rem solid var(--color-siete);
+        border-radius: 2rem;
+        font-size: 2rem;
+        height: 85%;
+        width: 85%;
     }
 
     .intermedio-bloque-encriptado-boton-copiar {
-        border: 0.4rem solid var(--color-dos);
-        border-radius: 3rem;
-        font-size: 3rem;
-        width: 10rem;
+        font-size: 2.3rem;
+        padding: 0.3rem 0.8rem;
     }
 
     .pie-de-pagina {
-        border: 0.5rem solid var(--color-siete);
         border-top-left-radius: 5rem;
         padding: 1rem;
     }
 
     .pie-de-pagina-contacto {
-        font-family: var(--fuente-seis);
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 48rem)
+/* Celular */
+    {
+    .encabezado {
+        border-bottom-right-radius: 3rem;
+        padding: 0.5rem;
+    }
+
+    .encabezado-titulo {
+        font-size: 2.3rem;
+    }
+
+    .intermedio {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .intermedio-bloque-encriptador {
+        gap: 0.3rem;
+        height: 70%;
+        width: 100%;
+    }
+
+    .intermedio-bloque-encriptador-entrada {
+        border-radius: 1.5rem;
+        font-size: 1.3rem;
+        height: 90%;
+        width: 85%;
+    }
+
+    .intermedio-bloque-encriptador-aviso {
+        font-size: 1rem;
+    }
+
+    .intermedio-bloque-encriptador-botones {
+        gap: 1rem;
+    }
+
+    .intermedio-bloque-encriptador-boton-encriptar {
         font-size: 1.8rem;
+    }
+
+    .intermedio-bloque-encriptador-boton-desencriptar {
+        font-size: 1.8rem;
+    }
+
+    .intermedio-bloque-encriptado {
+        gap: 0.3rem;
+        height: 30%;
+        width: 100%;
+    }
+
+    .intermedio-bloque-encriptado-texto {
+        border-radius: 1.5rem;
+        font-size: 1.3rem;
+        height: 85%;
+        width: 85%;
+    }
+
+    .intermedio-bloque-encriptado-boton-copiar {
+        font-size: 1.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .pie-de-pagina {
+        border-top-left-radius: 3rem;
+        padding: 0.5rem;
+    }
+
+    .pie-de-pagina-contacto {
+        font-size: 0.8rem;
     }
 }
