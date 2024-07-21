@@ -36,9 +36,13 @@ body {
 }
 
 .encabezado {
+    align-items: center;
+    display: flex;
     background-color: var(--color-uno);
     border-bottom: 0.5rem solid var(--color-cinco);
     border-bottom-right-radius: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
     padding: 0.5rem;
 }
 
@@ -46,8 +50,15 @@ body {
     font-family: var(--fuente-siete);
     font-size: 2rem;
     font-weight: 900;
+    padding-left: 1rem;
     /* -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: black; */
+}
+
+.encabezado-logo {
+    height: 2rem;
+    padding-right: 3rem;
+    width: auto;
 }
 
 .intermedio {
@@ -195,6 +206,13 @@ body {
 
     .encabezado-titulo {
         font-size: 3.5rem;
+        padding-left: 3rem;
+    }
+
+    .encabezado-logo {
+        height: 3rem;
+        padding-right: 5rem;
+        width: auto;
     }
 
     .intermedio {
@@ -277,6 +295,11 @@ body {
 
     .encabezado-titulo {
         font-size: 2.3rem;
+        padding-left: 0.5rem;
+    }
+
+    .encabezado-logo{
+        display: none;
     }
 
     .intermedio {
