@@ -5,6 +5,8 @@
 
 /* \s{2,} */
 /* ^\s*$\n */
+/* -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black; */
 :root {
     --color-uno: white;
     --color-dos: black;
@@ -20,6 +22,10 @@
     --fuente-cinco: "Bebas Neue", sans-serif;
     --fuente-seis: "Delius", cursive;
     --fuente-siete: "Noto Sans Display", sans-serif;
+    --icono-uno: url(/recursos/icono-candado-cerrado.svg);
+    --icono-dos: url(/recursos/icono-candado-abierto.svg);
+    --icono-tres: url(/recursos/icono-lupa.svg);
+    --icono-cuatro: url(/recursos/icono-simbolo-pregunta.svg);
 }
 
 * {
@@ -51,16 +57,13 @@ body {
     font-size: 2rem;
     font-weight: 900;
     padding-left: 1rem;
-    /* -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black; */
 }
 
-.encabezado-logo {
-    height: 2.5rem;
-    padding-right: 3rem;
-    width: auto;
-}
-
+/* .encabezado-logo {
+height: 2.5rem;
+padding-right: 3rem;
+width: auto;
+} */
 .intermedio {
     align-items: start;
     display: flex;
@@ -163,7 +166,7 @@ body {
 }
 
 .intermedio-bloque-encriptado-texto::before {
-    background: url(/recursos/candado-cerrado.svg) no-repeat center center;
+    background: var(--icono-tres) no-repeat center center;
     background-size: 70%;
     bottom: 0;
     content: "";
@@ -224,12 +227,11 @@ body {
         padding-left: 3rem;
     }
 
-    .encabezado-logo {
-        height: 3rem;
-        padding-right: 5rem;
-        width: auto;
-    }
-
+    /*.encabezado-logo {
+height: 3rem;
+padding-right: 5rem;
+width: auto;
+} */
     .intermedio {
         align-items: center;
         display: flex;
@@ -317,10 +319,9 @@ body {
         padding-left: 0.5rem;
     }
 
-    .encabezado-logo {
-        display: none;
-    }
-
+    /*.encabezado-logo {
+display: none;
+} */
     .intermedio {
         padding: 0.5rem;
         gap: 1rem;

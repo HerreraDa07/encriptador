@@ -20,18 +20,22 @@
         <section class="intermedio-bloque-encriptador">
             <textarea class="intermedio-bloque-encriptador-entrada" id="entradaUsuario" rows="5" cols="50"
                 placeholder="Escribe aqui tu texto"></textarea>
-            <p class="intermedio-bloque-encriptador-aviso"> <i class="fas fa-exclamation-triangle"></i> <strong>Solo
+            <p class="intermedio-bloque-encriptador-aviso"> <i class="fas fa-exclamation-triangle"></i>
+                <strong>Solo
                     puede ingresar letras minusculas / No puede
-                    ingresar caracteres especiales</strong></p>
+                    ingresar caracteres especiales</strong>
+            </p>
             <div class="intermedio-bloque-encriptador-botones">
-                <button onclick="borrarDatosCaja()" class="intermedio-bloque-encriptador-boton-encriptar"
+                <button onclick="presionoBoton(this.id)" id="botonEncriptar"
+                    class="intermedio-bloque-encriptador-boton-encriptar"
                     type="button"><strong>Encriptar</strong></button>
-                <button class="intermedio-bloque-encriptador-boton-desencriptar"
+                <button onclick="presionoBoton(this.id)" id="botonDesencriptar"
+                    class="intermedio-bloque-encriptador-boton-desencriptar"
                     type="button"><strong>Desencriptar</strong></button>
             </div>
         </section>
         <section class="intermedio-bloque-encriptado">
-            <p class="intermedio-bloque-encriptado-texto" id="textoEncriptado"></p>
+            <p class="intermedio-bloque-encriptado-texto" id="textoRecibido"></p>
             <div class="intermedio-bloque-encriptado-boton">
                 <button class="intermedio-bloque-encriptado-boton-copiar" onclick="copiarTexto()"
                     type="button"><strong>Copiar</strong></button>

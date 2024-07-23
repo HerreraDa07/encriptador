@@ -1,17 +1,45 @@
-function borrarDatosCaja() {
+let texto;
+function encriptarMensaje() {
     let textoDigitado = document.getElementById('entradaUsuario').value;
-    let textoParaEncriptar = textoDigitado;
-    elementosHtml('textoEncriptado', textoParaEncriptar)
+    texto = textoDigitado;
+    if (texto != '') {
+        elementosTextoHtml('textoRecibido', texto);
+    }
+    else {
+        elementosTextoHtml('textoRecibido', 'No ha digitado');
+    }
 }
 function copiarTexto() {
-    let textoCopiado = document.getElementById('encriptador').innerText;
-    console.log(textoCopiado);
+    let textoRecibido = document.getElementById('textoRecibido').innerText;
 }
-function elementosHtml(id, texto) {
+function elementosTextoHtml(id, texto) {
     let elementoPagina = document.getElementById(id);
     elementoPagina.innerHTML = texto;
 }
 function programaIniciado() {
-    elementosHtml('textoEncriptado', 'Aun no ha encriptado ningun mensaje');
+    elementosTextoHtml('textoRecibido', 'Aun no ha digitado ningun mensaje. Por favor, ingresa un texto.');
+}
+function elementoIconoHtml(id) {
+    let botonPresionado = id;
+    if (botonPresionado == 'botonEncriptar') {
+        encriptarMensaje();
+        if (texto == '') {
+            document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-simbolo-pregunta.svg)');
+        }
+        else {
+            document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-candado-cerrado.svg)');
+        }
+    }
+    else if (botonPresionado == 'botonDesencriptar') {
+        if (texto == '') {
+            document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-simbolo-pregunta.svg)');
+        }
+        else {
+            document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-candado-abierto.svg)');
+        }
+    }
+}
+function presionoBoton(id) {
+    elementoIconoHtml(id);
 }
 programaIniciado();
