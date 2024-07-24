@@ -5,8 +5,8 @@
 
 /* \s{2,} */
 /* ^\s*$\n */
-/* -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black; */
+/* -webkit-text-stroke-width: 1px; */
+/* -webkit-text-stroke-color: black; */
 :root {
     --color-uno: white;
     --color-dos: black;
