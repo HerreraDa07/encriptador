@@ -18,6 +18,17 @@ function encriptar(texto) {
         /* Accede a la variable y obtiene las palabras claves*/
     });
 }
+function desencriptar(texto) {
+    let reemplazarPalabras = { 'ai': 'a', 'enter': 'e', 'imes': 'i', 'ober': 'o', 'ufat': 'u' };
+    /* Variable que contiene las palabras claves y las vocales para desencriptar */
+    let regex = new RegExp(Object.keys(reemplazarPalabras).join('|'), 'g');
+    /* Identifica las palabras claves por una expresion regular */
+    return texto.replace(regex, function (remplazar) {
+        /* Validacion de palabras claves en el mensaje (recibido) y remplazo por vocales */
+        return reemplazarPalabras[remplazar];
+        /* Accede a la variable y obtiene las vocales */
+    });
+}
 function paginaIniciada() {
     document.getElementById('botonCopiar').setAttribute('disabled', true); /* Desactiva el boton de Copiar */
     document.getElementById('entradaUsuario').addEventListener("input", function () {
@@ -45,16 +56,17 @@ function presionoBoton(id) {
 }
 function recibirTexto() {
     let textoDigitado = document.getElementById('entradaUsuario').value; /* Extrae el mensaje del textarea */
-    let mensaje = encriptar(textoDigitado); /* Pasa el valor tipo string del textarea a una nueva variable modificable */
+    let mensaje = desencriptar(textoDigitado); /* Pasa el valor tipo string del textarea a una nueva variable modificable */
     if (mensaje != '') {
+        cambiarTextosHtml('textoRecibido', mensaje); /* Envia el mensaje a  */
         document.getElementById('botonCopiar').removeAttribute('disabled'); /* Activa el boton de Copiar */
         document.getElementById('entradaUsuario').value = ''; /* Borra el valor que tenga el textarea */
-        cambiarTextosHtml('textoRecibido', mensaje); /* Envia el mensaje a  */
     } else {
-        document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-simbolo-pregunta.svg)');
-        /* Bloque receptor: Coloca icono del simbolo de pregunta */
         cambiarTextosHtml('textoRecibido', '¡Error! No ha digitado ningún mensaje. Por favor, ingrese el texto que desea encriptar o desencriptar.');
         /* Bloque receptor: Mensaje al no recibir ningun texto */
+        document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-simbolo-pregunta.svg)');
+        /* Bloque receptor: Coloca icono del simbolo de pregunta */
+        document.getElementById('botonCopiar').setAttribute('disabled', true); /* Desactiva el boton de copiar */
     }
 }
 paginaIniciada(); /* Inicia la pagina */
