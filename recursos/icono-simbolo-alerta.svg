@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 113.72736 99.99874"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="icono-simbolo-alerta.svg"
+   width="113.72736"
+   height="99.998741"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#231f20;}</style>
+  </defs>
+  <title
+     id="title1">alert-triangle</title>
+  <g
+     id="g4"
+     transform="matrix(4.5476079,0,0,4.5476079,2.266106,-2.3770151)"
+     inkscape:export-filename="g4.png"
+     inkscape:export-xdpi="96.001205"
+     inkscape:export-ydpi="96.001205">
+    <path
+       class="cls-2"
+       d="M 22.56,16.3 14.89,3.58 C 13.541118,1.4698354 10.458882,1.4698354 9.11,3.58 L 1.44,16.3 c -0.551454,0.919247 -0.57051466,2.062887 -0.05,3 0.6019736,1.055138 1.7252298,1.70464 2.94,1.7 h 15.34 c 1.206504,0.01287 2.327831,-0.620256 2.94,-1.66 0.536086,-0.947362 0.516951,-2.11078 -0.05,-3.04 z"
+       id="path1-5"
+       sodipodi:nodetypes="ccccccccc"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.02362;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       class="cls-2"
+       d="M 22.56,16.3 14.89,3.58 C 13.541118,1.4698354 10.458882,1.4698354 9.11,3.58 L 1.44,16.3 c -0.551454,0.919247 -0.57051466,2.062887 -0.05,3 0.6019736,1.055138 1.7252298,1.70464 2.94,1.7 h 15.34 c 1.206504,0.01287 2.327831,-0.620256 2.94,-1.66 0.536086,-0.947362 0.516951,-2.11078 -0.05,-3.04 z"
+       id="path1-2"
+       sodipodi:nodetypes="ccccccccc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.13386;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       class="cls-2"
+       d="M 22.56,16.3 14.89,3.58 C 13.541118,1.4698354 10.458882,1.4698354 9.11,3.58 L 1.44,16.3 c -0.551454,0.919247 -0.57051466,2.062887 -0.05,3 0.6019736,1.055138 1.7252298,1.70464 2.94,1.7 h 15.34 c 1.206504,0.01287 2.327831,-0.620256 2.94,-1.66 0.536086,-0.947362 0.516951,-2.11078 -0.05,-3.04 z"
+       id="path1"
+       sodipodi:nodetypes="ccccccccc"
+       style="fill:#000000;fill-opacity:1" />
+    <path
+       id="circle1-8-3"
+       class="cls-2"
+       d="m 12,5.1955699 c -0.759397,3e-7 -1.37501,0.6156132 -1.37501,1.3750103 v 5.5000418 c 0.0016,1.831782 2.751582,1.831782 2.75002,0 V 6.5705802 c 0,-0.7593971 -0.615613,-1.37501 -1.37501,-1.3750103 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.13386;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="ssccss" />
+    <path
+       d="m 12,15.937527 c -0.759397,0 -1.37501,0.615613 -1.37501,1.37501 0,0.759397 0.615613,1.37501 1.37501,1.37501 0.759397,0 1.37501,-0.615613 1.37501,-1.37501 0,-0.759397 -0.615613,-1.37501 -1.37501,-1.37501 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.13386;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-09" />
+    <path
+       id="circle1-8"
+       class="cls-2"
+       d="m 12,5.1955699 c -0.759397,3e-7 -1.37501,0.6156132 -1.37501,1.3750103 v 5.5000418 c 0.0016,1.831782 2.751582,1.831782 2.75002,0 V 6.5705802 c 0,-0.7593971 -0.615613,-1.37501 -1.37501,-1.3750103 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.755906;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="ssccss" />
+    <path
+       id="circle1"
+       class="cls-2"
+       d="m 12,5.1955699 c -0.759397,3e-7 -1.37501,0.6156132 -1.37501,1.3750103 v 5.5000418 c 0.0016,1.831782 2.751582,1.831782 2.75002,0 V 6.5705802 c 0,-0.7593971 -0.615613,-1.37501 -1.37501,-1.3750103 z"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:1.37501"
+       sodipodi:nodetypes="ssccss" />
+    <path
+       d="m 12,15.937527 c -0.759397,0 -1.37501,0.615613 -1.37501,1.37501 0,0.759397 0.615613,1.37501 1.37501,1.37501 0.759397,0 1.37501,-0.615613 1.37501,-1.37501 0,-0.759397 -0.615613,-1.37501 -1.37501,-1.37501 z"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.755906;stroke-dasharray:none;stroke-opacity:1"
+       id="path1-4" />
+    <path
+       d="m 12,15.937527 c -0.759397,0 -1.37501,0.615613 -1.37501,1.37501 0,0.759397 0.615613,1.37501 1.37501,1.37501 0.759397,0 1.37501,-0.615613 1.37501,-1.37501 0,-0.759397 -0.615613,-1.37501 -1.37501,-1.37501 z"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:1.37501"
+       id="path1-0" />
+  </g>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>alert-triangle</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

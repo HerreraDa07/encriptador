@@ -5,8 +5,6 @@
 
 /* \s{2,} */
 /* ^\s*$\n */
-/* -webkit-text-stroke-width: 1px; */
-/* -webkit-text-stroke-color: black; */
 :root {
     --color-uno: white;
     --color-dos: black;
@@ -24,8 +22,10 @@
     --fuente-siete: "Noto Sans Display", sans-serif;
     --icono-uno: url(/recursos/icono-candado-cerrado.svg);
     --icono-dos: url(/recursos/icono-candado-abierto.svg);
-    --icono-tres: url(/recursos/icono-lupa.svg);
+    --icono-tres: url(/recursos/icono-letra.svg);
     --icono-cuatro: url(/recursos/icono-simbolo-pregunta.svg);
+    --icono-cinco: url(/recursos/icono-simbolo-alerta.svg);
+    --icono-seis: url(/recursos/icono-campana.svg);
 }
 
 * {
@@ -54,16 +54,11 @@ body {
 
 .encabezado-titulo {
     font-family: var(--fuente-siete);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 900;
     padding-left: 1rem;
 }
 
-/* .encabezado-logo {
-height: 2.5rem;
-padding-right: 3rem;
-width: auto;
-} */
 .intermedio {
     align-items: start;
     display: flex;
@@ -88,7 +83,7 @@ width: auto;
     border: 0.2rem solid var(--color-siete);
     border-radius: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: x-large;
     font-weight: bold;
     height: 90%;
     padding: 1rem;
@@ -156,7 +151,7 @@ width: auto;
     border: 0.2rem solid var(--color-siete);
     border-radius: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: x-large;
     font-weight: bold;
     height: 90%;
     overflow: hidden;
@@ -201,10 +196,14 @@ width: auto;
 }
 
 .pie-de-pagina {
+    align-items: end;
     background-color: var(--color-dos);
     border-top: 0.5rem solid var(--color-cuatro);
     border-top-left-radius: 2rem;
-    padding: 0.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    padding: 0.5rem 2rem;
 }
 
 .pie-de-pagina-contacto {
@@ -212,6 +211,22 @@ width: auto;
     font-family: var(--fuente-seis);
     font-size: 0.7rem;
     text-align: right;
+}
+
+.pie-de-pagina-enlaces-redes {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.enlace-github {
+    height: auto;
+    width: 2rem;
+}
+
+.enlace-linkedin {
+    height: auto;
+    width: 2rem;
 }
 
 @media (max-width: 64rem)
@@ -227,11 +242,6 @@ width: auto;
         padding-left: 3rem;
     }
 
-    /*.encabezado-logo {
-height: 3rem;
-padding-right: 5rem;
-width: auto;
-} */
     .intermedio {
         align-items: center;
         display: flex;
@@ -249,7 +259,7 @@ width: auto;
     .intermedio-bloque-encriptador-entrada {
         border: 0.3rem solid var(--color-siete);
         border-radius: 2rem;
-        font-size: 2rem;
+        font-size: xx-large;
         height: 90%;
         width: 90%;
     }
@@ -282,7 +292,7 @@ width: auto;
     .intermedio-bloque-encriptado-texto {
         border: 0.3rem solid var(--color-siete);
         border-radius: 2rem;
-        font-size: 2rem;
+        font-size: xx-large;
         height: 85%;
         width: 85%;
     }
@@ -304,6 +314,16 @@ width: auto;
     .pie-de-pagina-contacto {
         font-size: 1rem;
     }
+
+    .enlace-github {
+        height: auto;
+        width: 3rem;
+    }
+
+    .enlace-linkedin {
+        height: auto;
+        width: 3rem;
+    }
 }
 
 @media (max-width: 48rem)
@@ -316,12 +336,9 @@ width: auto;
 
     .encabezado-titulo {
         font-size: 2.3rem;
-        padding-left: 0.5rem;
+        padding-left: 0.1rem;
     }
 
-    /*.encabezado-logo {
-display: none;
-} */
     .intermedio {
         padding: 0.5rem;
         gap: 1rem;
@@ -335,7 +352,7 @@ display: none;
 
     .intermedio-bloque-encriptador-entrada {
         border-radius: 1.5rem;
-        font-size: 1.3rem;
+        font-size: x-large;
         height: 90%;
         width: 85%;
     }
@@ -364,7 +381,7 @@ display: none;
 
     .intermedio-bloque-encriptado-texto {
         border-radius: 1.5rem;
-        font-size: 1.3rem;
+        font-size: larger;
         height: 85%;
         width: 85%;
     }
@@ -381,5 +398,15 @@ display: none;
 
     .pie-de-pagina-contacto {
         font-size: 0.8rem;
+    }
+
+    .enlace-github {
+        height: auto;
+        width: 2rem;
+    }
+
+    .enlace-linkedin {
+        height: auto;
+        width: 2rem;
     }
 }
