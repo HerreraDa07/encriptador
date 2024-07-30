@@ -16,20 +16,20 @@ function botonDesencriptar() {
             else {
                 cambiarTextosHtml('textoRecibido', 'El texto que has digitado ya está desencriptado');
                 /* Envía el mensaje al bloque de interacción del usuario */
-                document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-simbolo-alerta.svg)');
+                document.documentElement.style.setProperty('--icono-tres', 'url(/encriptador/recursos/icono-simbolo-alerta.svg)');
                 document.getElementById('entradaUsuario').value = ''; /* Borra el valor que tenga el textarea */
             }
         }
         else {
             cambiarTextosHtml('textoRecibido', 'El mensaje debe ser más largo'); /* Envía el mensaje al bloque de interacción del usuario */
-            document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-letra.svg)');
+            document.documentElement.style.setProperty('--icono-tres', 'url(/encriptador/recursos/icono-letra.svg)');
             document.getElementById('entradaUsuario').value = ''; /* Borra el valor que tenga el textarea */
         }
     }
     else {
         cambiarTextosHtml('textoRecibido', '¡Error! No ha digitado ningún mensaje. Por favor, ingrese el texto que desea encriptar o desencriptar.');
         /* Bloque receptor: Mensaje al no recibir ningún texto */
-        document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-simbolo-pregunta.svg)');
+        document.documentElement.style.setProperty('--icono-tres', 'url(/encriptador/recursos/icono-simbolo-pregunta.svg)');
         /* Bloque receptor: Coloca icono del símbolo de pregunta */
         document.getElementById('botonCopiar').setAttribute('disabled', true); /* Desactiva el botón de copiar */
     }
@@ -44,7 +44,7 @@ function botonEncriptar() {
             if (texto) {
                 cambiarTextosHtml('textoRecibido', 'El texto que has digitado ya está encriptado');
                 /* Envía el mensaje al bloque de interacción del usuario */
-                document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-simbolo-alerta.svg)');
+                document.documentElement.style.setProperty('--icono-tres', 'url(/encriptador/recursos/icono-simbolo-alerta.svg)');
                 document.getElementById('entradaUsuario').value = ''; /* Borra el valor que tenga el textarea */
             }
             else {
@@ -56,14 +56,14 @@ function botonEncriptar() {
         }
         else {
             cambiarTextosHtml('textoRecibido', 'El mensaje debe ser más largo'); /* Envía el mensaje al bloque de interacción del usuario */
-            document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-letra.svg)');
+            document.documentElement.style.setProperty('--icono-tres', 'url(/encriptador/recursos/icono-letra.svg)');
             document.getElementById('entradaUsuario').value = ''; /* Borra el valor que tenga el textarea */
         }
     }
     else {
         cambiarTextosHtml('textoRecibido', '¡Error! No ha digitado ningún mensaje. Por favor, ingrese el texto que desea encriptar o desencriptar.');
         /* Bloque receptor: Mensaje al no recibir ningún texto */
-        document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-simbolo-pregunta.svg)');
+        document.documentElement.style.setProperty('--icono-tres', 'url(/encriptador/recursos/icono-simbolo-pregunta.svg)');
         /* Bloque receptor: Coloca icono del símbolo de pregunta */
         document.getElementById('botonCopiar').setAttribute('disabled', true); /* Desactiva el botón de copiar */
     }
@@ -77,7 +77,7 @@ function copiarTexto() {
     navigator.clipboard.writeText(textoCopiado).then(() => /* Copia en la papelera el valor de la variable modificable */ {
         cambiarTextosHtml('textoRecibido', ''); /* Bloque receptor: Borra el mensaje */
         document.getElementById('botonCopiar').setAttribute('disabled', true); /* Desactiva el botón de copiar */
-        document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-campana.svg)');
+        document.documentElement.style.setProperty('--icono-tres', 'url(/encriptador/recursos/icono-campana.svg)');
     });
 }
 function desencriptar(texto) {
@@ -118,12 +118,12 @@ function paginaIniciada() {
 function presionoBoton(id) {
     let boton = id; /* Le da el valor del ID (recibido) a una nueva variable modificable */
     if (boton == 'botonEncriptar') {
-        document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-candado-cerrado.svg)');
+        document.documentElement.style.setProperty('--icono-tres', 'url(/encriptador/recursos/icono-candado-cerrado.svg)');
         /* Bloque receptor: Coloca icono del candado cerrado */
         botonEncriptar(); /* Al presionar el botón de encriptar, manda a llamar a la función para encriptar */
     }
     else if (boton == 'botonDesencriptar') {
-        document.documentElement.style.setProperty('--icono-tres', 'url(/recursos/icono-candado-abierto.svg)');
+        document.documentElement.style.setProperty('--icono-tres', 'url(/encriptador/recursos/icono-candado-abierto.svg)');
         /* Bloque receptor: Coloca icono del candado abierto */
         botonDesencriptar(); /* Al presionar el botón de desencriptar, manda a llamar a la función para desencriptar */
     }
